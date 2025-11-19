@@ -1,0 +1,16 @@
+{
+    "timestamp": "2025-11-19T11:41:56.778755",
+    "cpu_percent": 0.7,
+    "ram_percent": 42.7,
+    "disk_percent": 24.8,
+    "network": {
+        "bytes_sent": 6860191,
+        "bytes_recv": 22225332,
+        "packets_sent": 61476,
+        "packets_recv": 123691,
+        "errin": 0,
+        "errout": 0,
+        "dropin": 20,
+        "dropout": 0
+    }
+}
