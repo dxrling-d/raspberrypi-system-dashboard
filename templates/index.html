@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>System Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>System Dashboard</h1>
+
+        <div class="filter">
+            <label for="timeRange">Select Time Range:</label>
+            <select id="timeRange">
+                <option value="lastHour">Last Hour</option>
+                <option value="last6Hours">Last 6 Hours</option>
+                <option value="last12Hours">Last 12 Hours</option>
+                <option value="today">Today</option>
+            </select>
+            <button id="applyFilter">Apply</button>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <canvas id="cpuChart" width="400" height="150"></canvas>
+            </div>
+            <div class="card">
+                <canvas id="ramChart" width="400" height="150"></canvas>
+            </div>
+            <div class="card">
+                <canvas id="diskChart" width="400" height="150"></canvas>
+            </div>
+            <div class="card">
+                <canvas id="networkChart" width="400" height="150"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
